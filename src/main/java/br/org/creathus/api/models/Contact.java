@@ -7,6 +7,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "contacts")
@@ -17,9 +20,22 @@ public class Contact implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
+	
+	@NotNull
+	@NotBlank
 	private String name;
+	
+	@NotNull
+	@NotBlank
 	private String gener;
+	
+	@NotNull
+	@NotBlank
 	private String telephone;
+	
+	@NotNull
+	@NotBlank
+	@Email
 	private String email;
 	
 	public long getId() {
@@ -28,9 +44,11 @@ public class Contact implements Serializable {
 	public void setId(long id) {
 		this.id = id;
 	}
+
 	public String getName() {
 		return name;
 	}
+	
 	public void setName(String name) {
 		this.name = name;
 	}

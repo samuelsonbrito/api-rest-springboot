@@ -2,6 +2,8 @@ package br.org.creathus.api.resources;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -33,7 +35,7 @@ public class ContactResource {
 	}
 	
 	@PostMapping("contato")
-	public Contact save(@RequestBody Contact contact) {
+	public Contact save(@RequestBody @Valid Contact contact) {
 		return contactRepository.save(contact);
 	}
 	
@@ -43,7 +45,7 @@ public class ContactResource {
 	}
 	
 	@PutMapping("contato")
-	public Contact update(@RequestBody Contact contact) {
+	public Contact update(@RequestBody @Valid Contact contact) {
 		return contactRepository.save(contact);
 	}
 	
