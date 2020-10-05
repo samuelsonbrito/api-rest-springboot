@@ -1,0 +1,10 @@
+CREATE DATABASE creathus;
+
+CREATE TABLE IF NOT EXISTS contacts (
+  id int NOT NULL AUTO_INCREMENT,
+  name varchar(100) NOT NULL,
+  email varchar(50) NOT NULL,
+  gener varchar(10) NOT NULL,
+  telephone varchar(10) NOT NULL,
+  PRIMARY KEY (id)
+); 
