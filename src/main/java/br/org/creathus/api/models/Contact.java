@@ -41,6 +41,7 @@ public class Contact implements Serializable {
 	public long getId() {
 		return id;
 	}
+	
 	public void setId(long id) {
 		this.id = id;
 	}
@@ -52,24 +53,29 @@ public class Contact implements Serializable {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
 	public String getGener() {
 		return gener;
 	}
+	
 	public void setGener(String gener) {
 		this.gener = gener;
 	}
+	
 	public String getTelephone() {
 		return telephone;
 	}
+	
 	public void setTelephone(String telephone) {
 		this.telephone = telephone;
 	}
+	
 	public String getEmail() {
 		return email;
 	}
+	
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	
+
 }

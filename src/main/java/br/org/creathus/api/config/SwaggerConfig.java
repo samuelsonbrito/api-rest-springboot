@@ -10,7 +10,6 @@ import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
 import springfox.documentation.service.Contact;
-import springfox.documentation.service.VendorExtension;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 
@@ -41,7 +40,7 @@ public class SwaggerConfig {
                 new Contact("Samuelson Brito", "https://github.com/samuelsonbrito/",
                         "samuelsonma@gmail.com"),
                 "Apache License Version 2.0",
-                "https://www.apache.org/licesen.html", new ArrayList<VendorExtension>());
+                "https://www.apache.org/licesen.html", new ArrayList<>());
 
         return apiInfo;
     }

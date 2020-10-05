@@ -7,4 +7,5 @@ import br.org.creathus.api.models.Contact;
 public interface ContactRepository extends JpaRepository<Contact, Long> {
 
 	Contact findById(long id);
+	
 }
